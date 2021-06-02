@@ -1,0 +1,28 @@
+h1 {
+  background-color: powderblue;
+  text-align: center;
+  display: inline;
+}
+
+div {
+  width: 50%;
+  border: 2px solid cornflowerblue;
+  padding: 10px;
+  margin: 10px;
+}
+
+p {
+  display: inline;
+}
+
+p.header {
+  font-size: large;
+}
+
+table {
+  width: 100%
+}
+
+th, td {
+  width: 33.3%;
+}
