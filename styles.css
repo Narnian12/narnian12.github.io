@@ -1,5 +1,4 @@
 h1 {
-  background-color: powderblue;
   text-align: center;
   display: inline;
 }
@@ -15,8 +14,12 @@ p {
   display: inline;
 }
 
+/* For header info */
 p.header {
   font-size: large;
+  border: 1px solid powderblue;
+  box-shadow: 10px 5px 5px powderblue;
+  padding: 3px;
 }
 
 table {
@@ -25,4 +28,9 @@ table {
 
 th, td {
   width: 33.3%;
+}
+
+th.content, td.content {
+  text-align: center;
+  width: 50%;
 }
