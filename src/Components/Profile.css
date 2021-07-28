@@ -1,0 +1,50 @@
+#Profile {
+  margin: 45px 0px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+img {
+  /* width: 100%; */
+  height: auto;
+  max-width: 400px;
+}
+
+.header {
+  width: 100%;
+  flex-grow: 1;
+  background-color: lightsteelblue;
+}
+
+h1 {
+  min-width: 200px;
+}
+
+p {
+  min-width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .header { padding: 0px; }
+}
+
+.card {
+  border: 1px solid powderblue;
+  box-shadow: 10px 5px 5px powderblue;
+  padding: 3px;
+  margin: 10px 40px;
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 500px) {
+  #Profile {
+    margin: 180px 0px;
+  }
+  .header { padding: 0; }
+  .introduction { margin: 0; }
+}
