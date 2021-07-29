@@ -1,31 +1,15 @@
-#Profile {
-  margin: 45px 0px;
+.Profile {
+  margin: 10px 0px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-img {
-  height: auto;
-  max-width: 400px;
-}
-
-.header {
-  width: 100%;
-  flex-grow: 1;
-  background-color: #5585de;
-  background-image: linear-gradient(#5586DE, white);
-}
-
 p {
   min-width: 200px;
   margin: 20px;
   text-align: center;
-}
-
-@media only screen and (max-width: 900px) {
-  .header { padding: 0px; }
 }
 
 .card {
