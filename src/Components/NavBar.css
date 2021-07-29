@@ -29,4 +29,12 @@
     float: none;
     text-align: left;
   }
+
+  .nav a.socials {
+    float: none;
+  }
+}
+
+.nav a.socials {
+  float: right;
 }
