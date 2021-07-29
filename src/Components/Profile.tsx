@@ -12,7 +12,7 @@ function Profile() {
         <h2>Introduction</h2>
         <p>Hello! I'm Peter, an aspiring full-stack developer with experience in 
         QA, DevOps, and back-end technologies. My hope for this page is to gain a stronger
-        understanding of UI development with the React library.
+        understanding of UI development with the React library, especially with Hooks and TypeScript.
         </p>
       </div>
       <div className="card">

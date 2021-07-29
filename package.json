@@ -1,5 +1,6 @@
 {
-  "name": "psun_website",
+  "name": "peter_sun_personal_website",
+  "homepage": "https://narnian12.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,6 +44,7 @@
     "@iconify-icons/logos": "^1.1.10",
     "@iconify/react": "^1.1.4",
     "@types/react": "^17.0.15",
-    "@types/react-dom": "^17.0.9"
+    "@types/react-dom": "^17.0.9",
+    "gh-pages": "^3.2.3"
   }
 }
