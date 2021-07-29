@@ -1,37 +1,69 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './NavBar.css';
 import { Icon } from '@iconify/react';
 import githubIcon from '@iconify-icons/logos/github-icon';
 import linkedinFill from '@iconify-icons/akar-icons/linkedin-fill';
+import { useMediaQuery } from '../CustomHooks/useMediaQuery';
 
 function NavBar(props: { sections: Array<string> }) {
-  const [navState, setNavState] = useState({
-    menu: props.sections[0]
-  });
+  const [menuState, setMenuState] = useState("");
+  const [openState, setOpenState] = useState(false);
 
   const switchMenu = (title: string) => {
-    setNavState({
-      menu: title
-    });
+    setMenuState(title);
+    setOpenState(false);
   }
+  const toggleOpen = () => setOpenState(!openState);
 
-  return (
-    <div className="nav">
-      {props.sections.map((elem) => {
+  let isMobile = useMediaQuery('(max-width: 500px)');
+  useEffect(() => {
+    if (!isMobile) setOpenState(false);
+  }, [isMobile]);
+
+  let menu = [];
+
+  if (isMobile) {
+    menu.push(<a href="#0" onClick={toggleOpen} key="menu">
+      <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" alt="Menu"/>
+    </a>);
+    if (openState) {
+      menu.push(props.sections.map((elem) => {
         return <a 
-          className={navState.menu === elem ? "active" : undefined} 
+          className={menuState === elem ? "active" : undefined} 
           href={"#" + elem} 
           onClick={() => switchMenu(elem)} 
           key={elem}>
-            {elem}
+          {elem}
         </a>;
-      })}
-      <a className="socials" href="https://www.linkedin.com/in/peterysun/" target="_blank">
+      }));
+    }
+  }
+  else {
+    menu = props.sections.map((elem) => {
+      return <a 
+        className={menuState === elem ? "active" : undefined} 
+        href={"#" + elem} 
+        onClick={() => switchMenu(elem)} 
+        key={elem}>
+          {elem}
+      </a>;
+    });
+  }
+
+  let socials = isMobile ? null :
+    <React.Fragment>
+      <a className="socials" href="https://www.linkedin.com/in/peterysun/" target="_blank" rel="noreferrer">
         <Icon icon={linkedinFill} />
       </a>
-      <a className="socials" href="https://github.com/Narnian12" target="_blank">
+      <a className="socials" href="https://github.com/Narnian12" target="_blank" rel="noreferrer">
         <Icon icon={githubIcon} />
       </a>
+    </React.Fragment>;
+
+  return (
+    <div className="nav">
+      {menu}
+      {socials}
     </div>
   );
 }
