@@ -8,3 +8,10 @@
   padding-top: 50px;
   margin-top: -50px;
 }
+
+@media only screen and (max-width: 500px) {
+  .headers {
+    padding-top: 70px;
+    margin-top: -70px;
+  }
+}

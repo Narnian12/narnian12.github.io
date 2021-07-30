@@ -51,14 +51,14 @@ function NavBar(props: { sections: Array<string> }) {
   }
 
   let socials = isMobile ? null :
-    <React.Fragment>
+    <>
       <a className="socials" href="https://www.linkedin.com/in/peterysun/" target="_blank" rel="noreferrer">
         <Icon icon={linkedinFill} />
       </a>
       <a className="socials" href="https://github.com/Narnian12" target="_blank" rel="noreferrer">
         <Icon icon={githubIcon} />
       </a>
-    </React.Fragment>;
+    </>;
 
   return (
     <div className="nav">

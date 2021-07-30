@@ -1,0 +1,39 @@
+.languages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.language_bar {
+  margin: 5px 10px;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid cornflowerblue;
+}
+
+.language_name {
+  width: 100px;
+  float: left;
+  font-weight: bold;
+  background-color: cornflowerblue;
+}
+
+.fill {
+  height: 100%;
+  background-color: powderblue;
+  float: left;
+}
+
+.percentage {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 10px 0px 0px;
+}
+
+.cpp { width: 70%; }
+.js { width: 60%; }
+.react { width: 60%; }
+.rust { width: 50%; }
+.cs { width: 40%; }
+.r { width: 35%; }
+.java { width: 30%; }
