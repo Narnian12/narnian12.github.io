@@ -1,3 +1,4 @@
+import '../Styles/Card.css';
 import './Profile.css';
 
 function Profile() {

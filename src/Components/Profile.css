@@ -11,16 +11,3 @@
   margin: 20px;
   text-align: center;
 }
-
-.card {
-  border: 1px solid powderblue;
-  box-shadow: 10px 5px 5px powderblue;
-  padding: 3px;
-  margin: 10px;
-  max-width: 400px;
-}
-
-@media only screen and (max-width: 500px) {
-  .header { padding: 0; }
-  .introduction { margin: 0; }
-}

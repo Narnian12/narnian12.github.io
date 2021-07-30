@@ -4,7 +4,7 @@ function Languages() {
   const languages =[
     {
       name: "C++",
-      percentage: "70%",
+      percentage: "75%",
       class: "cpp fill"
     },
     {

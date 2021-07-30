@@ -8,7 +8,6 @@
   margin: 5px 10px;
   max-width: 600px;
   width: 100%;
-  border: 1px solid cornflowerblue;
 }
 
 .language_name {
@@ -27,10 +26,11 @@
 .percentage {
   display: flex;
   justify-content: flex-end;
-  margin: 0px 10px 0px 0px;
+  padding: 0px 10px 0px 0px;
+  background-color: lightgray;
 }
 
-.cpp { width: 70%; }
+.cpp { width: 75%; }
 .js { width: 60%; }
 .react { width: 60%; }
 .rust { width: 50%; }
