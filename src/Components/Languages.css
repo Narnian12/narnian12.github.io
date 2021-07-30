@@ -4,13 +4,13 @@
   width: 100%;
 }
 
-.language_bar {
+.language-bar {
   margin: 5px 10px;
   max-width: 600px;
   width: 100%;
 }
 
-.language_name {
+.language-name {
   width: 100px;
   float: left;
   font-weight: bold;

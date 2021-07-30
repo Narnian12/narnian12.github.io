@@ -3,6 +3,7 @@ import NavBar from './Components/NavBar';
 import Header from './Components/Header';
 import Profile from './Components/Profile';
 import Languages from './Components/Languages';
+import Projects from './Components/Projects';
 
 const navSections = ["Profile", "Languages", "Projects", "Contact"];
 
@@ -18,6 +19,8 @@ function App() {
         Percentage bars are subjective. I am ranking them based on how often and comfortable I am using the language.
       </p>
       <Languages />
+      <h1 id="Projects" className="headers">Projects</h1>
+      <Projects />
     </div>
   );
 }

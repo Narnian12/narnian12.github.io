@@ -43,9 +43,9 @@ function Languages() {
       {languages.map(elem => {
         return (
           <div className="languages" key={elem.name}>
-            <div className="language_bar">
+            <div className="language-bar">
               <div className={elem.class}>
-                <div className="language_name"><p>{elem.name}</p></div>
+                <div className="language-name"><p>{elem.name}</p></div>
               </div>
               <div className="percentage"><p>{elem.percentage}</p></div>
             </div>
