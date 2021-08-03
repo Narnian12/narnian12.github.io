@@ -29,11 +29,3 @@
   padding: 0px 10px 0px 0px;
   background-color: lightgray;
 }
-
-.cpp { width: 75%; }
-.js { width: 60%; }
-.react { width: 60%; }
-.rust { width: 50%; }
-.cs { width: 40%; }
-.r { width: 35%; }
-.java { width: 30%; }

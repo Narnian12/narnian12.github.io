@@ -5,7 +5,7 @@ import Profile from './Components/Profile';
 import Languages from './Components/Languages';
 import Projects from './Components/Projects';
 
-const navSections = ["Profile", "Languages", "Projects", "Contact"];
+const navSections = ["Profile", "Languages", "Projects"];
 
 function App() {
   return (
