@@ -13,7 +13,7 @@ function Projects() {
         <p><b>Languages Used</b>: Rust</p>
       </div>
       <div className="card project">
-        <h2><a href="https://narnian12.github.io/ps_calculator/" target="_blank" rel="noreferrer">ps_calculator</a></h2>
+        <h2><a href="https://github.com/Narnian12/ps_calculator" target="_blank" rel="noreferrer">ps_calculator</a></h2>
         <p className="card-text">
           Online calculator that executes simple math, tracks history, and supports keyboard use. Uses a significant amount of regex to generalize computational logic.
         </p>
