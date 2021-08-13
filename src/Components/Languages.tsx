@@ -8,7 +8,7 @@ function Languages() {
     },
     {
       name: "JavaScript",
-      percentage: "70%",
+      percentage: "75%",
     },
     {
       name: "React",

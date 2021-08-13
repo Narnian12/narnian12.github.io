@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './NavBar.css';
 import { Icon } from '@iconify/react';
+import mediumIcon from '@iconify-icons/logos/medium-icon';
 import githubIcon from '@iconify-icons/logos/github-icon';
 import linkedinFill from '@iconify-icons/akar-icons/linkedin-fill';
 import { useMediaQuery } from '../CustomHooks/useMediaQuery';
@@ -52,6 +53,9 @@ function NavBar(props: { sections: Array<string> }) {
 
   let socials = isMobile ? null :
     <>
+      <a className="socials" href="https://medium.com/@pysun12" target="_blank" rel="noreferrer">
+        <Icon icon={mediumIcon} />
+      </a>
       <a className="socials" href="https://www.linkedin.com/in/peterysun/" target="_blank" rel="noreferrer">
         <Icon icon={linkedinFill} />
       </a>
