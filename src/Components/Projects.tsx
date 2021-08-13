@@ -5,7 +5,7 @@ function Projects() {
   return (
     <div className="card-layout" style={{justifyContent: "center"}}>
       <div className="card project">
-        <h2><a href="https://github.com/Narnian12/ckjm_analyzer" target="_blank" rel="noreferrer">ckjm_analyzer</a></h2>
+        <h2><a href="https://github.com/Narnian12/ckjm-analyzer" target="_blank" rel="noreferrer">ckjm-analyzer</a></h2>
         <p className="card-text">
           Command-line application that detects Dependency Injection (DI) occurrences in Java class files,
           using the <a href="http://gromit.iiar.pwr.wroc.pl/p_inf/ckjm/" target="_blank" rel="noreferrer">CKJM-Extended</a> tool to measure metrics.
@@ -13,14 +13,14 @@ function Projects() {
         <p><b>Languages/Libraries Used</b>: Rust</p>
       </div>
       <div className="card project">
-        <h2><a href="https://github.com/Narnian12/ps_calculator" target="_blank" rel="noreferrer">ps_calculator</a></h2>
+        <h2><a href="https://github.com/Narnian12/ps-calculator" target="_blank" rel="noreferrer">ps-calculator</a></h2>
         <p className="card-text">
           Online calculator that executes simple math, tracks history, and supports keyboard use. Uses a significant amount of regex to generalize computational logic.
         </p>
         <p><b>Languages/Libraries Used</b>: React, TypeScript, HTML, CSS</p>
       </div>
       <div className="card project">
-        <h2><a href="https://github.com/Narnian12/ps_todo" target="_blank" rel="noreferrer">ps_todo</a></h2>
+        <h2><a href="https://github.com/Narnian12/ps-todo" target="_blank" rel="noreferrer">ps-todo</a></h2>
         <p className="card-text">
           Todo app that implements the client side of a fullstack application with GraphQL, using a Hasura/Heroku-generated cloud database.
         </p>
