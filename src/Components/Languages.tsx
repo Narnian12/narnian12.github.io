@@ -29,14 +29,6 @@ function Languages() {
     {
       name: "C#",
       percentage: "40%",
-    },
-    {
-      name: "R",
-      percentage: "35%",
-    },
-    {
-      name: "Java",
-      percentage: "30%",
     }
   ]
   return (
