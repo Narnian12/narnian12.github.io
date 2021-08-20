@@ -29,9 +29,9 @@ function Projects() {
       <div className="card project">
         <h2><a href="https://github.com/Narnian12/todo-app-server" target="_blank" rel="noreferrer">todo-app-server</a></h2>
         <p className="card-text">
-          Server-side application of todo app deployed on Heroku. Uses a simple JSON file to store data.
+          Server-side application of todo app deployed on Heroku. Uses a Prisma ORM SQLite database to store data.
         </p>
-        <p><b>Languages/Libraries Used</b>: Node.js, Apollo Server</p>
+        <p><b>Languages/Libraries Used</b>: Node.js, Apollo Server, Prisma</p>
       </div>
     </div>
   );

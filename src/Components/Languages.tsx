@@ -29,6 +29,10 @@ function Languages() {
     {
       name: "C#",
       percentage: "40%",
+    },
+    {
+      name: "SQL",
+      percentage: "40%"
     }
   ]
   return (
