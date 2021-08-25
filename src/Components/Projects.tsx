@@ -27,11 +27,11 @@ function Projects() {
         <p><b>Languages/Libraries Used</b>: React, TypeScript, GraphQL, Apollo Client</p>
       </div>
       <div className="card project">
-        <h2><a href="https://github.com/Narnian12/todo-app-server" target="_blank" rel="noreferrer">todo-app-server</a></h2>
+        <h2><a href="https://github.com/Narnian12/todo-app-server-expanded" target="_blank" rel="noreferrer">todo-app-server-expanded</a></h2>
         <p className="card-text">
           Server-side application of todo app deployed on Heroku. Uses a Prisma ORM SQLite database to store data.
         </p>
-        <p><b>Languages/Libraries Used</b>: Node.js, Apollo Server, Prisma</p>
+        <p><b>Languages/Libraries Used</b>: Node.js, Apollo Server Express, Prisma, GraphQL</p>
       </div>
     </div>
   );
