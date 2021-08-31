@@ -4,13 +4,6 @@ import Profile from './Components/Profile';
 import Languages from './Components/Languages';
 import Projects from './Components/Projects';
 import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  a {
-    text-decoration: none;
-  }
-`
 
 const Wrapper = styled.div`
   text-align: center;
@@ -32,7 +25,6 @@ const navSections = ["Profile", "Languages", "Projects"];
 function App() {
   return (
     <Wrapper>
-      <GlobalStyle />
       <NavBar sections={navSections}/>
       <Header />
       <Headers id="Profile">Profile</Headers>
