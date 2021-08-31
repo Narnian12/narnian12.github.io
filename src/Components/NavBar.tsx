@@ -1,10 +1,48 @@
-import React, { useState, useEffect } from 'react';
-import './NavBar.css';
+import { useState, useEffect } from 'react';
 import { Icon } from '@iconify/react';
 import mediumIcon from '@iconify-icons/logos/medium-icon';
 import githubIcon from '@iconify-icons/logos/github-icon';
 import linkedinFill from '@iconify-icons/akar-icons/linkedin-fill';
 import { useMediaQuery } from '../CustomHooks/useMediaQuery';
+import styled from 'styled-components';
+
+const NavigationWrapper = styled.div`
+  background-color: #5586DE;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+`
+
+type NavLinkType = {
+  menuState: string,
+  elem: string
+};
+
+const NavLink = styled.a<NavLinkType>`
+  display: block;
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: ${(props: NavLinkType) => props.menuState === props.elem ? "gray" : "#5586DE"};
+  :hover {
+    background-color: lightgray;
+    color: midnightblue;
+  }
+  @media only screen and (max-width: 500px) {
+    float: none;
+    text-align: left;
+  }
+`
+
+const SocialLink = styled(NavLink)`
+  float: right;
+  @media only screen and (max-width: 500px) {
+    float: none
+  }
+`
 
 function NavBar(props: { sections: Array<string> }) {
   const [menuState, setMenuState] = useState("");
@@ -24,51 +62,51 @@ function NavBar(props: { sections: Array<string> }) {
   let menu = [];
 
   if (isMobile) {
-    menu.push(<a href="#0" onClick={toggleOpen} key="menu">
+    menu.push(<NavLink menuState="" elem=" " href="#0" onClick={toggleOpen} key="menu">
       <img src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" alt="Menu"/>
-    </a>);
+    </NavLink>);
     if (openState) {
       menu.push(props.sections.map((elem) => {
-        return <a 
-          className={menuState === elem ? "active" : undefined} 
+        return <NavLink menuState={menuState} elem={elem}
           href={"#" + elem} 
           onClick={() => switchMenu(elem)} 
           key={elem}>
           {elem}
-        </a>;
+        </NavLink>;
       }));
     }
   }
   else {
     menu = props.sections.map((elem) => {
-      return <a 
-        className={menuState === elem ? "active" : undefined} 
-        href={"#" + elem} 
-        onClick={() => switchMenu(elem)} 
-        key={elem}>
-          {elem}
-      </a>;
+      console.log(menuState, elem);
+      return (
+        <NavLink menuState={menuState} elem={elem}
+                href={"#" + elem} 
+                onClick={() => switchMenu(elem)}
+                key={elem}>
+        {elem}
+      </NavLink>);
     });
   }
 
   let socials = isMobile ? null :
     <>
-      <a className="socials" href="https://medium.com/@pysun12" target="_blank" rel="noreferrer">
+      <SocialLink menuState="" elem=" " href="https://medium.com/@pysun12" target="_blank" rel="noreferrer">
         <Icon icon={mediumIcon} />
-      </a>
-      <a className="socials" href="https://www.linkedin.com/in/peterysun/" target="_blank" rel="noreferrer">
+      </SocialLink>
+      <SocialLink menuState="" elem=" " href="https://www.linkedin.com/in/peterysun/" target="_blank" rel="noreferrer">
         <Icon icon={linkedinFill} />
-      </a>
-      <a className="socials" href="https://github.com/Narnian12" target="_blank" rel="noreferrer">
+      </SocialLink>
+      <SocialLink menuState="" elem=" " href="https://github.com/Narnian12" target="_blank" rel="noreferrer">
         <Icon icon={githubIcon} />
-      </a>
+      </SocialLink>
     </>;
 
   return (
-    <div className="nav">
+    <NavigationWrapper>
       {menu}
       {socials}
-    </div>
+    </NavigationWrapper>
   );
 }
 
