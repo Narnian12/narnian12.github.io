@@ -1,4 +1,3 @@
-import '../Styles/Card.css';
 import { Card, CardLayout, CardText } from '../Styles/Card';
 import styled from 'styled-components';
 
