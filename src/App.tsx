@@ -1,5 +1,6 @@
 import NavBar from './Components/NavBar';
 import Header from './Components/Header';
+import AnimeQuote from './Components/AnimeQuote';
 import Profile from './Components/Profile';
 import Languages from './Components/Languages';
 import Projects from './Components/Projects';
@@ -13,6 +14,7 @@ const App: FC = () => {
     <Wrapper>
       <NavBar sections={navSections} />
       <Header />
+      <AnimeQuote />
       <Headers id="Profile">Profile</Headers>
       <Profile />
       <Headers id="Languages">Languages</Headers>

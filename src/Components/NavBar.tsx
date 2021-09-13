@@ -7,45 +7,6 @@ import { useMediaQuery } from '../CustomHooks/useMediaQuery';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const NavigationWrapper = styled.div`
-  background-color: #5586de;
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  top: 0;
-`;
-
-type NavLinkType = {
-  menuState: string;
-  elem: string;
-};
-
-const NavLink = styled.a<NavLinkType>`
-  display: block;
-  float: left;
-  color: white;
-  padding: 14px 16px;
-  font-size: 15px;
-  text-decoration: none;
-  background-color: ${(props: NavLinkType) =>
-    props.menuState === props.elem ? 'gray' : '#5586DE'};
-  :hover {
-    background-color: lightgray;
-    color: midnightblue;
-  }
-  @media only screen and (max-width: 500px) {
-    float: none;
-    text-align: left;
-  }
-`;
-
-const SocialLink = styled(NavLink)`
-  float: right;
-  @media only screen and (max-width: 500px) {
-    float: none;
-  }
-`;
-
 interface NavBarProps {
   sections: Array<string>;
 }
@@ -95,7 +56,6 @@ const NavBar: FC<NavBarProps> = ({ sections }) => {
     }
   } else {
     menu = sections.map((elem) => {
-      console.log(menuState, elem);
       return (
         <NavLink
           menuState={menuState}
@@ -155,3 +115,42 @@ export default NavBar;
 NavBar.propTypes = {
   sections: PropTypes.array.isRequired,
 };
+
+const NavigationWrapper = styled.div`
+  background-color: #5586de;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+`;
+
+type NavLinkType = {
+  menuState: string;
+  elem: string;
+};
+
+const NavLink = styled.a<NavLinkType>`
+  display: block;
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: ${(props: NavLinkType) =>
+    props.menuState === props.elem ? 'gray' : '#5586DE'};
+  :hover {
+    background-color: lightgray;
+    color: midnightblue;
+  }
+  @media only screen and (max-width: 500px) {
+    float: none;
+    text-align: left;
+  }
+`;
+
+const SocialLink = styled(NavLink)`
+  float: right;
+  @media only screen and (max-width: 500px) {
+    float: none;
+  }
+`;
