@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
-`
+`;
 
 ReactDOM.render(
   <React.StrictMode>
