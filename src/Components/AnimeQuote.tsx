@@ -3,10 +3,9 @@ import styled from 'styled-components';
 
 const AnimeQuote: FC = () => {
   const [animeQuote, setAnimeQuote] = useState({
-    quote:
-      "I hate waiting, but if waiting means being able to be with you, I'll wait for as long as forever",
-    character: 'Aisaka Taiga',
-    anime: 'Toradora',
+    quote: '',
+    character: '',
+    anime: '',
   });
 
   interface AnimeQuote {
@@ -16,11 +15,15 @@ const AnimeQuote: FC = () => {
   }
 
   useEffect(() => {
-    fetch('https://animechan.vercel.app/api/random')
+    fetch('https://animechan.vercel.app/api/quotes/anime?title=toradora')
       .then((response) => response.json())
-      .then((quote: AnimeQuote) => setAnimeQuote(quote));
+      .then((quotes: [AnimeQuote]) =>
+        setAnimeQuote(quotes[Math.floor(Math.random() * 10)])
+      );
   }, []);
-  return (
+  return animeQuote.quote.length === 0 ? (
+    <p>Loading quote...</p>
+  ) : (
     <AnimeQuoteWrapper>
       <p>
         <i>&quot;{animeQuote.quote}&quot;</i>
