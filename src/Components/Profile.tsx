@@ -9,7 +9,7 @@ const Profile: FC = () => {
         <CardText>
           Hello! I&apos;m Peter, an aspiring full-stack developer with
           experience in QA, DevOps, and back-end technologies. My hope for this
-          page is to gain a stronger understanding of UI development with the
+          website is to gain a stronger understanding of UI development with the
           React library, especially with Hooks and TypeScript.
         </CardText>
       </Card>
