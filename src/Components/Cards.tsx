@@ -12,7 +12,7 @@ interface ProfileProps {
 
 const Cards: FC<ProfileProps> = ({ cards }) => {
   const cardStyle = {
-    backgroundColor: '#282828',
+    backgroundColor: '#212121',
     minWidth: 300,
     maxWidth: 400,
     margin: 1,
