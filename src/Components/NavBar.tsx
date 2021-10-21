@@ -4,8 +4,9 @@ import mediumIcon from '@iconify-icons/logos/medium-icon';
 import githubIcon from '@iconify-icons/logos/github-icon';
 import linkedinFill from '@iconify-icons/akar-icons/linkedin-fill';
 import { useMediaQuery } from '../CustomHooks/useMediaQuery';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
+import Typography from '@mui/material/Typography';
 
 interface NavBarProps {
   sections: Array<string>;
@@ -48,7 +49,7 @@ const NavBar: FC<NavBarProps> = ({ sections }) => {
               onClick={() => switchMenu(elem)}
               key={elem}
             >
-              {elem}
+              <Typography>{elem}</Typography>
             </NavLink>
           );
         })
@@ -64,7 +65,7 @@ const NavBar: FC<NavBarProps> = ({ sections }) => {
           onClick={() => switchMenu(elem)}
           key={elem}
         >
-          {elem}
+          <Typography>{elem}</Typography>
         </NavLink>
       );
     });
@@ -117,7 +118,7 @@ NavBar.propTypes = {
 };
 
 const NavigationWrapper = styled.div`
-  background-color: #5586de;
+  background-color: #404040;
   overflow: hidden;
   position: fixed;
   width: 100%;
@@ -137,10 +138,10 @@ const NavLink = styled.a<NavLinkType>`
   font-size: 15px;
   text-decoration: none;
   background-color: ${(props: NavLinkType) =>
-    props.menuState === props.elem ? 'gray' : '#5586DE'};
+    props.menuState === props.elem ? 'gray' : '#404040'};
   :hover {
     background-color: lightgray;
-    color: midnightblue;
+    color: #ffffff;
   }
   @media only screen and (max-width: 500px) {
     float: none;
