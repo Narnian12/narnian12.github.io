@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import styled from '@emotion/styled';
-import { LanguageInfo } from '../utils/interfaces';
-import PropTypes from 'prop-types';
-import Typography from '@mui/material/Typography';
+import { FC } from "react";
+import styled from "@emotion/styled";
+import { LanguageInfo } from "../utils/interfaces";
+import PropTypes from "prop-types";
+import Typography from "@mui/material/Typography";
 
 interface LanguagesProps {
   languages: LanguageInfo[];

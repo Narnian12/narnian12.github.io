@@ -1,7 +1,7 @@
-import Egypt from '../Images/egypt.jpg';
-import styled from '@emotion/styled';
-import { FC } from 'react';
-import Typography from '@mui/material/Typography';
+import Egypt from "../Images/egypt.jpg";
+import styled from "@emotion/styled";
+import { FC } from "react";
+import Typography from "@mui/material/Typography";
 
 const Header: FC = () => {
   return (

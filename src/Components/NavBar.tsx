@@ -1,19 +1,19 @@
-import { useState, useEffect, FC } from 'react';
-import { Icon } from '@iconify/react';
-import mediumIcon from '@iconify-icons/logos/medium-icon';
-import githubIcon from '@iconify-icons/logos/github-icon';
-import linkedinFill from '@iconify-icons/akar-icons/linkedin-fill';
-import { useMediaQuery } from '../CustomHooks/useMediaQuery';
-import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
-import Typography from '@mui/material/Typography';
+import { useState, useEffect, FC } from "react";
+import { Icon } from "@iconify/react";
+import mediumIcon from "@iconify-icons/logos/medium-icon";
+import githubIcon from "@iconify-icons/logos/github-icon";
+import linkedinFill from "@iconify-icons/akar-icons/linkedin-fill";
+import { useMediaQuery } from "../CustomHooks/useMediaQuery";
+import styled from "@emotion/styled";
+import PropTypes from "prop-types";
+import Typography from "@mui/material/Typography";
 
 interface NavBarProps {
   sections: Array<string>;
 }
 
 const NavBar: FC<NavBarProps> = ({ sections }) => {
-  const [menuState, setMenuState] = useState('');
+  const [menuState, setMenuState] = useState("");
   const [openState, setOpenState] = useState(false);
 
   const switchMenu = (title: string) => {
@@ -22,7 +22,7 @@ const NavBar: FC<NavBarProps> = ({ sections }) => {
   };
   const toggleOpen = () => setOpenState(!openState);
 
-  const isMobile = useMediaQuery('(max-width: 500px)');
+  const isMobile = useMediaQuery("(max-width: 500px)");
   useEffect(() => {
     if (!isMobile) setOpenState(false);
   }, [isMobile]);
@@ -45,7 +45,7 @@ const NavBar: FC<NavBarProps> = ({ sections }) => {
             <NavLink
               menuState={menuState}
               elem={elem}
-              href={'#' + elem}
+              href={"#" + elem}
               onClick={() => switchMenu(elem)}
               key={elem}
             >
@@ -61,7 +61,7 @@ const NavBar: FC<NavBarProps> = ({ sections }) => {
         <NavLink
           menuState={menuState}
           elem={elem}
-          href={'#' + elem}
+          href={"#" + elem}
           onClick={() => switchMenu(elem)}
           key={elem}
         >
@@ -138,7 +138,7 @@ const NavLink = styled.a<NavLinkType>`
   font-size: 15px;
   text-decoration: none;
   background-color: ${(props: NavLinkType) =>
-    props.menuState === props.elem ? 'gray' : '#404040'};
+    props.menuState === props.elem ? "gray" : "#404040"};
   :hover {
     background-color: lightgray;
     color: #ffffff;

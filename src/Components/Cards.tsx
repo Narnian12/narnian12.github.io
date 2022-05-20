@@ -1,10 +1,10 @@
-import React, { FC } from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import styled from '@emotion/styled';
-import Typography from '@mui/material/Typography';
-import { CardInfo } from '../utils/interfaces';
-import PropTypes from 'prop-types';
+import React, { FC } from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import styled from "@emotion/styled";
+import Typography from "@mui/material/Typography";
+import { CardInfo } from "../utils/interfaces";
+import PropTypes from "prop-types";
 
 interface ProfileProps {
   cards: CardInfo[];
@@ -12,7 +12,7 @@ interface ProfileProps {
 
 const Cards: FC<ProfileProps> = ({ cards }) => {
   const cardStyle = {
-    backgroundColor: '#212121',
+    backgroundColor: "#212121",
     minWidth: 300,
     maxWidth: 400,
     margin: 1,
