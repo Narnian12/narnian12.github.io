@@ -8,24 +8,24 @@ import { FC } from "react";
 import Typography from "@mui/material/Typography";
 import { CardInfo, LanguageInfo } from "./utils/interfaces";
 
-const navSections = ["Profile", "Languages", "Projects"];
+const navSections = ["Profile", "Languages", "Projects", "Writing"];
 
 const profileCards: CardInfo[] = [
   {
     header: "Introduction",
-    body: "Hello! I'm Peter, a full-stack developer with a passion in building software for the healthcare field.",
+    body: "Hello! I am Peter, a full-stack developer with a passion in building software for healthcare.",
   },
   {
     header: "Work",
-    body: "I am a software engineer in Olive specializing in backend development using .NET.",
+    body: "I am a software engineer in Olive specializing in backend development using the .NET Framework.",
   },
   {
     header: "Education",
-    body: "I am pursuing a Master of Science in Computer Science at Oakland University.",
+    body: "I am completing a Master of Science in Computer Science at Oakland University.",
   },
   {
     header: "Research",
-    body: "I am researching on quantifying Dependency Injection analysis as a framework that can improve software maintainability.",
+    body: "I have written an open-source paper on the potential for dependency injection to improve software maintainability.",
   },
   {
     header: "Passions",
@@ -82,8 +82,26 @@ const projectCards: CardInfo[] = [
   {
     link: "https://github.com/Narnian12/ps-studio-ghibli-films",
     header: "ps-studio-ghibli-films",
-    body: "Web application showcasing Studio Ghibli data from online API in grid format. Includes pagination support",
+    body: "Web application showcasing Studio Ghibli data from online API in grid format. Includes pagination support.",
     footer: "React, TypeScript",
+  },
+];
+
+const writingCards: CardInfo[] = [
+  {
+    link: "https://medium.com/@pysun12/creating-a-todo-app-with-react-apollo-and-hasura-d7d7949db50b",
+    header: "How to Make a Todo App",
+    body: "Medium article detailing how to create a todo app using React for the client, Apollo for the server and Hasura for database management.",
+  },
+  {
+    link: "https://arxiv.org/abs/2205.06381",
+    header: "Assessing Dependency Injection",
+    body: "Research paper discussing implementation of ckjm-analyzer and proposing new software quality metric to assess maintainability.",
+  },
+  {
+    link: "https://narnian12.gitbooks.io/r-analysis-of-miseq-sop-processed-data/content/",
+    header: "MiSeq SOP",
+    body: "Documentation on standard operating procedure to analyze gene sequences from Illuma MiSeq platform.",
   },
 ];
 
@@ -115,7 +133,12 @@ const App: FC = () => {
         </Typography>
       </Headers>
       <Cards cards={projectCards} />
-      {/* <Projects /> */}
+      <Headers id="Writing">
+        <Typography variant="h3" color="text.primary">
+          Writing
+        </Typography>
+      </Headers>
+      <Cards cards={writingCards} />
     </Wrapper>
   );
 };

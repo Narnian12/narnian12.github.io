@@ -76,15 +76,6 @@ const NavBar: FC<NavBarProps> = ({ sections }) => {
       <SocialLink
         menuState=""
         elem=" "
-        href="https://medium.com/@pysun12"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <Icon icon={mediumIcon} />
-      </SocialLink>
-      <SocialLink
-        menuState=""
-        elem=" "
         href="https://www.linkedin.com/in/peterysun/"
         target="_blank"
         rel="noreferrer"
