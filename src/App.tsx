@@ -53,7 +53,7 @@ const projectCards: CardInfo[] = [
     link: "https://github.com/Narnian12/ckjm-analyzer",
     header: "ckjm-analyzer",
     body: "CLI application that analyzes Dependency Injection and Chidamber and Kemerer Java Metrics in Java class files.",
-    footer: "Rust",
+    footer: "C#",
   },
   {
     link: "https://github.com/Narnian12/ps-calculator",
