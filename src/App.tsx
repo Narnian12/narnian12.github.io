@@ -17,7 +17,7 @@ const profileCards: CardInfo[] = [
   },
   {
     header: "Work",
-    body: "I am a software engineer in Olive specializing in backend development using the .NET Framework.",
+    body: "I am a software engineer in Olive specializing in backend development using .NET Core.",
   },
   {
     header: "Education",
