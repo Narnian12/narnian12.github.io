@@ -38,14 +38,14 @@ const profileCards: CardInfo[] = [
 ];
 
 const languages: LanguageInfo[] = [
-  { name: "C++", percentage: "85%" },
-  { name: "JavaScript", percentage: "75%" },
+  { name: "C#", percentage: "80%" },
+  { name: "C++", percentage: "70%" },
+  { name: "JavaScript", percentage: "60%" },
   { name: "React", percentage: "60%" },
-  { name: "C#", percentage: "60%" },
+  { name: "SQL", percentage: "55%" },
   { name: "HTML", percentage: "55%" },
   { name: "CSS", percentage: "50%" },
   { name: "Rust", percentage: "50%" },
-  { name: "SQL", percentage: "40%" },
 ];
 
 const projectCards: CardInfo[] = [
@@ -94,7 +94,7 @@ const writingCards: CardInfo[] = [
     body: "Medium article detailing how to create a todo app using React for the client, Apollo for the server and Hasura for database management.",
   },
   {
-    link: "https://arxiv.org/abs/2205.06381",
+    link: "https://www.mdpi.com/2073-431X/11/9/141",
     header: "Assessing Dependency Injection",
     body: "Research paper discussing implementation of ckjm-analyzer and proposing new software quality metric to assess maintainability.",
   },
