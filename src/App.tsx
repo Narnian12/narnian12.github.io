@@ -8,7 +8,7 @@ import { FC } from "react";
 import Typography from "@mui/material/Typography";
 import { CardInfo, LanguageInfo } from "./utils/interfaces";
 
-const navSections = ["Profile", "Languages", "Projects", "Writing"];
+const navSections = ["Profile", "Languages", "Projects"];
 
 const profileCards: CardInfo[] = [
   {
@@ -17,11 +17,11 @@ const profileCards: CardInfo[] = [
   },
   {
     header: "Work",
-    body: "I am a software engineer in Olive specializing in backend development using .NET Core.",
+    body: "I am a software engineer in Availity specializing in backend development using .NET Core.",
   },
   {
     header: "Education",
-    body: "I am completing a Master of Science in Computer Science at Oakland University.",
+    body: "I completed a Master of Science in Computer Science at Oakland University.",
   },
   {
     header: "Research",
@@ -29,11 +29,11 @@ const profileCards: CardInfo[] = [
   },
   {
     header: "Passions",
-    body: "I love writing, and hope to publish a novel one day. I enjoy playing guitar and piano, particularly Christian music.",
+    body: "I love writing, and hope to publish a novel one day. I enjoy playing guitar and piano.",
   },
   {
     header: "Current Tech Stack",
-    body: "I am working with .NET and EF. My personal project involves React.",
+    body: "I am working with .NET and EF. My personal projects involve React.",
   },
 ];
 
@@ -87,24 +87,6 @@ const projectCards: CardInfo[] = [
   },
 ];
 
-const writingCards: CardInfo[] = [
-  {
-    link: "https://medium.com/@pysun12/creating-a-todo-app-with-react-apollo-and-hasura-d7d7949db50b",
-    header: "How to Make a Todo App",
-    body: "Medium article detailing how to create a todo app using React for the client, Apollo for the server and Hasura for database management.",
-  },
-  {
-    link: "https://www.mdpi.com/2073-431X/11/9/141",
-    header: "Assessing Dependency Injection",
-    body: "Research paper discussing implementation of ckjm-analyzer and proposing new software quality metric to assess maintainability.",
-  },
-  {
-    link: "https://narnian12.gitbooks.io/r-analysis-of-miseq-sop-processed-data/content/",
-    header: "MiSeq SOP",
-    body: "Documentation on standard operating procedure to analyze gene sequences from Illuma MiSeq platform.",
-  },
-];
-
 const App: FC = () => {
   return (
     <Wrapper>
@@ -122,10 +104,6 @@ const App: FC = () => {
           Languages
         </Typography>
       </Headers>
-      <Typography color="text.secondary" style={{ margin: "0px 40px" }}>
-        Percentage bars are subjective. I am ranking them based on how often and
-        comfortable I am using the language.
-      </Typography>
       <Languages languages={languages} />
       <Headers id="Projects">
         <Typography variant="h3" color="text.primary">
@@ -133,12 +111,6 @@ const App: FC = () => {
         </Typography>
       </Headers>
       <Cards cards={projectCards} />
-      <Headers id="Writing">
-        <Typography variant="h3" color="text.primary">
-          Writing
-        </Typography>
-      </Headers>
-      <Cards cards={writingCards} />
     </Wrapper>
   );
 };
