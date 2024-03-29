@@ -42,10 +42,10 @@ const languages: LanguageInfo[] = [
   { name: "C++", percentage: "70%" },
   { name: "JavaScript", percentage: "60%" },
   { name: "React", percentage: "60%" },
+  { name: "Vue", percentage: "55%" },
   { name: "SQL", percentage: "55%" },
   { name: "HTML", percentage: "55%" },
   { name: "CSS", percentage: "50%" },
-  { name: "Rust", percentage: "50%" },
 ];
 
 const projectCards: CardInfo[] = [

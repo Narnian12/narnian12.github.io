@@ -1,6 +1,5 @@
 import { useState, useEffect, FC } from "react";
 import { Icon } from "@iconify/react";
-import mediumIcon from "@iconify-icons/logos/medium-icon";
 import githubIcon from "@iconify-icons/logos/github-icon";
 import linkedinFill from "@iconify-icons/akar-icons/linkedin-fill";
 import { useMediaQuery } from "../CustomHooks/useMediaQuery";
