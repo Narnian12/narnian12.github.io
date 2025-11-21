@@ -1,6 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { createTheme, ThemeProvider } from "@mui/material";
+import ReactDOM from "react-dom/client";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
 import App from "./App";
 import "./index.css";
 import {
@@ -11,6 +12,7 @@ import {
 
 const theme = createTheme({
   palette: {
+    mode: "dark",
     background: {
       paper: BACKGROUND_COLOR,
     },
@@ -21,11 +23,11 @@ const theme = createTheme({
   },
 });
 
-ReactDOM.render(
-  <>
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <App />
     </ThemeProvider>
-  </>,
-  document.getElementById("root")
+  </React.StrictMode>
 );

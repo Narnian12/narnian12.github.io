@@ -7,7 +7,7 @@ const Header: FC = () => {
   return (
     <Div>
       <Typography variant="h2" color="text.primary">
-        PS Portfolio
+        Peter S Portfolio
       </Typography>
       <Img src={Egypt} alt="Egypt"></Img>
     </Div>
