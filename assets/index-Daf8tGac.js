@@ -32,7 +32,7 @@ Error generating stack: `+u.message+`
   @media only screen and (max-width: 500px) {
     float: none;
   }
-`,rv="/narnian12.github.io/assets/egypt-BsTAIf03.jpg",ov=()=>K.jsxs(iv,{children:[K.jsx(Ft,{variant:"h2",color:"text.primary",children:"Peter S Portfolio"}),K.jsx(lv,{src:rv,alt:"Egypt"})]}),iv=ot.div`
+`,rv="/assets/egypt-BsTAIf03.jpg",ov=()=>K.jsxs(iv,{children:[K.jsx(Ft,{variant:"h2",color:"text.primary",children:"Peter S Portfolio"}),K.jsx(lv,{src:rv,alt:"Egypt"})]}),iv=ot.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
