@@ -1,6 +1,14 @@
 body {
   margin: 0;
   background-color: #181818;
+  color: var(--text-primary);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --background-paper: #282828;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b3b8;
 }
 
 a {
